@@ -8,6 +8,7 @@ steps:
     working_directory: ${{main_clone}}
     dockerfile: Dockerfile
     no_cache: true
+    no_cf_cache: true
 
   TriggerRemoteJob:
     title: Triggering Jenkins Remote Job
