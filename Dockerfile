@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 
-RUN apt-get -y upgrade & apt-get -y install curl
+RUN apt-get -y update
+RUN apt-get -y install curl
 
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
