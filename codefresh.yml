@@ -1,0 +1,14 @@
+version: '1.0'
+steps:
+
+  BuildImage:
+    title: Building Image
+    type: build
+    image_name: saptest/remotetrigger
+    working_directory: ${{main_clone}}
+    dockerfile: Dockerfile
+
+  TriggerRemoteJob:
+    title: Triggering Jenkins Remote Job
+    image: ${{BuildImage}}
+    
