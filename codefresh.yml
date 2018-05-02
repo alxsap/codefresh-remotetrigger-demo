@@ -11,4 +11,7 @@ steps:
   TriggerRemoteJob:
     title: Triggering Jenkins Remote Job
     image: ${{BuildImage}}
-    
+    environment:
+        - JENKINS_JOB_URL=http://yourJenkins/job/yourJob
+        - JENKINS_USER=user
+        - JENKINS_PASSWORD=password
