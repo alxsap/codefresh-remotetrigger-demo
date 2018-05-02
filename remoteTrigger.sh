@@ -1,5 +1,3 @@
-#!/bin/sh
-
 if [ -z "$JENKINS_JOB_URL" ]; then
     echo "Need to set JENKINS_JOB_URL"
     exit 1
