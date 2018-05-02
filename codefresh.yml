@@ -21,3 +21,9 @@ steps:
   RunJenkins:
     title: Triggering Jenkins Job
     image: codefresh/cf-run-jenkins-job
+
+  CheckEnv:
+    title: Check Env
+    image: ubuntu
+    commands:
+        - env
